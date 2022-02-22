@@ -1,0 +1,187 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(to left, rgb(170, 165, 165), rgb(119, 84, 84));
+}
+
+@import "variables";
+
+/* contenido, basicamente es el texto o el elemento multimedia que tenga dentro esa etiqueta */
+
+/*relleno, es el espacio interno entre el contenido y el borde de "la caja" */
+/* margen, es el espacio  externo entre la caja (etiquetas), y las demas */
+/*h1{
+    background-color: red;
+    /*padding: 40px;
+    padding-button: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-left: 40px;
+
+    padding: 30px 20px 10px 50px; */
+
+.tituloPrincipal{
+    background-color: $color-principal;
+}
+
+h1{
+    text-align: left;
+    font-size: 75px;
+    margin: auto auto 50px auto;
+    border: 3px solid black;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+
+    padding: 30px 20px 10px 50px;
+    position: relative;
+}
+
+#cincuenta{
+    text-align: center;
+    font-size: 25px;
+}
+
+#introduccion{
+    font-weight:bold;
+    font-size: 20px;
+}
+
+#tito{
+    width: 35%;
+}
+
+.aparecer{
+    animation-name: aparecer; 
+    animation-iteration-count: infinite; /* tiempo de duracion: cuanto quiere que se loopee*/ 
+    animation-duration: 1s; /* cuanto tiempo dura la animacion en si*/
+    animation-timing-function: linear; /* en la forma que suceda, es para acelerar o desacelerar la animación a lo largo del duration por ejemplo
+    n*/
+    animation-direction: alternate;
+    }
+
+    @keyframes aparecer{
+        from{
+            opacity: 1;
+        }
+    
+            to{
+    
+            opacity: 0;
+            }
+    }
+
+img{
+    width: 100%;
+    margin-top: 30px;
+}
+
+a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    min-width: 152px;
+
+    /* propiedad de borde */
+
+    border: 5px solid white;
+
+}
+
+header{
+    grid-area: header;
+    margin-bottom: 50px;
+    .tituloPrincipal{
+        color: white;
+    }
+}
+
+nav{
+    justify-self: center;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    display: flex;
+    grid-area: footer;
+    h3{
+        font-size: 20px;
+    }
+}
+
+.menu{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+hr{
+    margin-bottom: 40px;
+}
+
+i{
+    font-size: 2em;
+    padding: 5px;
+    justify-self: right;
+}
+
+.imagenes{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-area: center;
+    width: 1200px;
+    border: 3px solid black;
+    margin: auto auto;
+    gap: 10px;
+    row-gap: 10px;
+    column-gap: 50px;
+    justify-content: center;
+}
+
+.formularioPrincipal{
+    font-size: 20px;
+}
+
+.catas7{
+    margin-bottom: 60px;
+}
+
+@media (max-width: 1210px) {
+    .menu{
+        flex-wrap: wrap;
+    }
+    .menu a{
+        flex-basis: 22%;
+    }
+    .imagenes{
+        width: 90%;
+    }
+}
+
+@media (max-width: 680px){
+    .menu{
+        flex-wrap:wrap;
+    }
+    .menu a{
+        flex-basis: 45%;
+    }
+    .imagenes{
+        width: 80%;
+    }
+    .imagenes img{
+        width: 80%;
+    }
+}
+

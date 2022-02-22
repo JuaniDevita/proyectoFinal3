@@ -1,0 +1,16 @@
+$vinylWhisky: (
+
+    vinylWhisky-font-family: $tipografiaPrincipal,
+    vinylWhisky-background-image: linear-gradientlinear-gradient(to left, rgb(170, 165, 165), rgb(119, 84, 84)),
+    vinylWhisky-font-size: 75px,
+    vinylWhisky-position: relative,
+    );
+
+.vinylWhisky{
+
+    font-family: map-get($map:$vinylWhisky, $key:vinylWhisky-font-family);
+    background-image: map-get($map:$bvinylWhisky, $key: vinylWhisky-background-image);
+    font-size: map-get($map:$vinylWhisky, $key: vinylWhisky-font-size);
+    position: map-get($map:$vinylWhisky, $key: vinylWhisky-position);
+
+    }

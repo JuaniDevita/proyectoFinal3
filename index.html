@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenidos al sitio web de Vinyl and Whisky. Aquí podrá realizar catas para principiantes y para gente que ya conoce del amplio mundo del whisky.">
+    <meta name="keywords" content="Whisky, bebidas, alcohol, catas">
+    <title>Home</title>
+
+    <!-- link tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- link de bootstrap -->
+    <link rel="stylesheet" href="cssP/bootstrap.min.css">
+
+    <!-- link de fontawesome -->
+    <script src="https://kit.fontawesome.com/174003fe10.js" crossorigin="anonymous"></script>
+
+    <!-- link de estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+    
+</head>
+<body>
+  
+    <header>
+      <h2 id="cincuenta" class="aparecer"> PRIMERA CATA 50% DE DESCUENTO</h2>
+      <h1 class="tituloPrincipal">Vinyl & Whisky</h1>
+    </header>
+    <nav class="menu">
+      <a href="index.html"> Home </a>
+      <a href="pages/productos.html"> Productos </a>
+      <a href="pages/catas.html"> Catas </a>
+      <a href="pages/historia.html"> Historia </a>
+      <a href="pages/contacto.html"> Contacto </a>
+    </nav>
+
+    <main>
+      <p id="introduccion">Lo invitamos a conocer más sobre nosotros, dando una vuelta desde nuestros comienzos, el Whisky y música. </p>
+      <section>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/whisky1.PNG" class="d-block w-100" alt="whisky1">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/whisky2.jpg" class="d-block w-100" alt="whisky2">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/whisky3.jpg" class="d-block w-100" alt="whisky3">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </section>
+    </main>
+        
+    <footer>
+        <h3>Todos los derechos reservados por Vinyl & Whisky</h3>
+          <span class="redesSociales">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="far fa-envelope"></i>
+          </span> 
+    </footer>
+
+    <script src="./js/bootstrap.min.js"></script>
+
+</body>
+</html>

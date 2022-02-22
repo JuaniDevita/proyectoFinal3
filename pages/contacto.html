@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenidos al sitio web de Vinyl and Whisky. Aquí podrá realizar catas para principiantes y para gente que ya conoce del amplio mundo del whisky.">
+    <meta name="keywords" content="Whisky, bebidas, alcohol, catas">
+    <title>Contacto</title>
+
+    <!-- link de fontawesome -->
+    <script src="https://kit.fontawesome.com/174003fe10.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../CSS/estilos.css">
+
+    <!-- link de tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h2 id="cincuenta" class="aparecer"> PRIMERA CATA 50% DE DESCUENTO</h2>
+        <h1 class="tituloPrincipal">Vinyl & Whisky</h1>
+    </header>
+
+    <nav class="menu">
+        <a href="../index.html"> Home </a>
+        <a href="productos.html"> Productos </a>
+        <a href="catas.html"> Catas </a>
+        <a href="historia.html"> Historia </a>
+        <a> Contacto </a>
+    </nav>    
+
+    <main>
+        <form>
+            <fieldset class="formularioPrincipal">
+                <legend class="form"> Formulario </legend>
+                <div>
+                    <label for="nombre"> Nombre y apellido </label>
+                    <input type="text" name="nombre" required placeholder="nombre y apellido">
+                </div>
+                <div>
+                    <label for="email"> Correo electrónico</label>
+                    <input type="text" name="email" required placeholder="email">
+                </div>
+                <div>
+                    <label for="pais"> Selecciona tu pais</label>
+                    <select name="pais">
+                        <option value=""></option>
+                        <option value="argnetina"> Argentina</option>
+                        <option value="colombia"> Colombia</option>
+                        <option value="chile"> Chile</option>
+                        <option value="venezuela"> Venezuela</option>
+                        <option value="brasil"> Brasil</option>
+                        <option value="peru"> Perú</option>
+                        <option value="bolivia"> Bolivia</option>
+                        <option value="uruguay"> Uruguay</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="sexo"> Género</label> <br>
+                    <input type="radio" name="sexo" required value="hombre"> Hombre <br>
+                    <input type="radio" name="sexo" required value="mujer"> Mujer <br>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Restablecer">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+       
+    <footer>
+        <h3> Todos los derechos reservados por Vinyl & Whisky </h3>
+        <i class="fab fa-instagram" id="redesSociales"></i>
+        <i class="fab fa-facebook" id="redesSociales"></i>
+        <i class="far fa-envelope" id="redesSociales"></i>
+    </footer>
+
+</body>
+</html>
